@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00b1e1">
+    android:background="@drawable/bill">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_alignParentBottom="true"
-                android:background="#E2E2E2"
+                android:background ="#E2E2E2"
                 android:gravity="center">
 
                 <TextView
@@ -125,7 +125,9 @@
         android:ems="10"
         android:gravity="center"
         android:hint="Vehicle no"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
 
     <Button
         android:id="@+id/enterbtn"

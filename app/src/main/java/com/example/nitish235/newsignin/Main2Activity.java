@@ -41,10 +41,8 @@ public class Main2Activity extends AppCompatActivity {
         plan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //place the buitton click code here.
+                //place the button click code here.
                 startActivity(new Intent(Main2Activity.this,MapsActivity.class));
-                Intent intent;
-
             }
         });
         sign_out = findViewById(R.id.log_out);

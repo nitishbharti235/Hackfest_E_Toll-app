@@ -3,34 +3,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@drawable/map"
     android:orientation="vertical">
 
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
 
         <EditText
             android:id="@+id/TFaddress"
-            android:layout_width="310dp"
+            android:layout_width="300dp"
+            android:textColor="@android:color/background_light"
             android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/Bsearch"
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:background="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:layout_marginStart="12dp"
+            android:background="@android:color/transparent"
             android:onClick="onSearch"
             android:text="Search"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/TFaddress"
+            android:textColor="@android:color/tab_indicator_text"
+            android:textSize="15sp"
+            android:textStyle="bold"
             tools:layout_editor_absoluteY="0dp" />
     </LinearLayout>
     android:layout_width="wrap_content"
@@ -41,23 +42,21 @@
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_height="470dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         tools:context=".MapsActivity" />
 
     <Button
         android:id="@+id/paybtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="20dp"
-        android:background="@color/colorPrimary"
+        android:layout_weight="0"
+        android:background="@android:color/transparent"
         android:onClick="onPress"
-        android:text="Pay_Now"
-        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+        android:text="Pay Now"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold" />
 </LinearLayout>

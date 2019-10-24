@@ -126,7 +126,7 @@ public class Main3Activity extends AppCompatActivity {
             Intent intent=new Intent(Main3Activity.this,Main5Activity.class);
             startActivity(intent);
 
-              //String vechicle_number= vehicle_text.getText().toString();
+              //String vechicle_number= vehicle_text.getText().toString(); 8*c
                 String id=databaseReference.push().getKey();
                 vehicle vehicle_details=new vehicle(id,num);
 
@@ -138,7 +138,6 @@ public class Main3Activity extends AppCompatActivity {
             Log.e(TAG, "Exception in onPaymentSuccess", e);
         }
     }
-
 
     @SuppressWarnings("unused")
     //@Override
